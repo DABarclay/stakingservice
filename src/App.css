@@ -1,0 +1,806 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: "Brandon";
+    src: url('BrandonText-Bold-1.woff'), url('BrandonText-Bold-1.woff') format('woff');
+}
+
+.header{
+    width: 100%;
+    height: auto;
+}
+
+.burgercontainer{
+    width: 100%;
+    height: auto;
+    display: none;
+    align-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.dropnavbar{
+    display: none;
+}
+
+.burger div {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Brandon", sans-serif;
+    position: relative;
+    top: 0px;
+    z-index: 999;
+}
+
+.logoborder  {
+    width: 12.722%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 39vw;
+    max-width: 44%;
+    height: auto;
+} 
+
+.socials{
+    display: flex;
+    justify-content: right;
+    width: 37.855%;
+    height: 100%;
+}   
+
+nav{
+    width: 48.755%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.socials, .navbar, .logoborder {
+    padding: 10px;
+}
+
+.navbar li,
+.socials li,
+.sectionfoursocials li,
+.navfooter li,
+.socialsfooter li{
+    list-style: none;
+}
+
+.navbar a, 
+.socials a{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    fill: #C8C8C8;
+    font-weight: 300;
+    font-family: "Brandon", sans-serif;
+}
+
+.dropnavbar a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 20px;
+}
+
+.dropnavbar a:hover {
+    background-color: #636363;
+} 
+
+.dropnavbar b {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #CACACA;
+    background-color: #636363;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 20px;
+}
+
+.socials {
+    padding: 13px 20px;
+}
+
+.navbar a, .dropnavbar a {
+    padding: 14px 20px 12px 20px
+}
+
+.socials a{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a li,
+.socialsfooter a li{
+    width: 17.5px;
+    height: 20px;
+}
+
+.container{
+    position: absolute;
+    background-image: url(https://medusaprotocol.com/wp-content/uploads/2022/05/Untitled-design-24.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.46;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+}
+
+.background-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container h1{
+    color: white;
+}
+
+.element {
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    height: 90vh;
+}
+
+.block {
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementtitle, .elementpar, .elementbuttons {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 2;
+    text-align: center;
+}
+
+.elementtitle {
+    font-size: 40px;
+    font-family: 'Brandon', sans-serif;
+    top: 30vh;
+}
+
+.elementpar {
+    top: 35vh;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.elementbuttons {
+    top: 38vh;
+    font-family: 'Brandon', sans-serif;
+}
+
+.elementbuttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.block button {
+    font-family: "Raleway", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 0px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 50%);
+    padding: 15px 35px 15px 35px;
+    border-spacing: 20px;
+    width: 30vw;
+    margin: 10px;
+}
+
+.sectiontwo{
+    position: relative;
+    color: white;
+    font-family: "Brandon", sans-serif;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 16px;
+}
+
+.sectiontwotitle{ 
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.sectiontwocontent{ 
+    max-width: 1100px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.sectiontwobutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sectiontwobutton button{
+    font-family: "Raleway", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 0px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 50%);
+    padding: 15px 35px 15px 35px;
+    width: 50vw;
+}
+
+.stp1, .stp2, .stp3{
+    text-align: center;
+    width: 33.333%;
+}
+
+.sectionthree{
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.sectionthreecontainer {
+    max-width: 1100px;
+    min-height: 88vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.sectionthreeimg {
+    max-width: 34.103%;
+    display: flex;
+}
+
+.sectionthreecontentcontainer {
+    display: flex;
+    width: 65.897%;
+    padding: 0% 2% 0% 0%;
+}
+
+.sectionthreeimg img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionthreecontent {
+    display: block;
+    position: relative;
+}
+
+.sectionthreep1 {
+    font-family: "Brandon", sans-serif;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sectionthreep2 , .sectionthreebutton button {
+    font-family: "Raleway", Sans-serif;
+    font-size: 16px;
+    display: block;
+}
+
+.sectionthreebutton {
+    margin: 14px 0px 0px 0px;
+    width: 100%;
+}
+
+.sectionthreebutton button {
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 0px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 50%);
+    padding: 15px 35px 15px 35px;
+    width: 100%;
+}
+
+.sectionfour {
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.sectionfourcontainer {
+    max-width: 1140px;
+    padding: 100px 0px 100px 0px;
+}
+
+.sectionfourcontent {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.sectionfoursocials {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionfoursocials a {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding-left: 5px;
+    fill: #C8C8C8;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sfc1 {
+    font-family: "Brandon", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sfc2 {
+    font-family: "Raleway", Sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.navandsocialsfootercontainer {
+    max-width: 1140px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Brandon", sans-serif;
+    font-size: 13px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.navfootercontainer {
+    width: 100%;
+    text-align: left;
+}
+
+.navfooter {
+    display: flex;
+    position: relative;
+    text-align: left;
+    max-width: 63.421%;
+    height: 100%;
+}
+
+.navfooter a {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    padding: 13px 20px;
+    fill: #C8C8C8;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: "Brandon", sans-serif;
+}
+
+.socialsfooter a {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    fill: #C8C8C8;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: "Brandon", sans-serif;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.socialsfooter {
+    display: flex;
+    position: relative;
+    text-align: right;
+    max-width: 36.492%;
+    height: 100%;
+}
+
+.footercontent {
+    font-family: "Raleway", Sans-serif;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: #E3E3E3;
+    font-weight: 600;
+}
+
+.fc1 {
+    margin-top: 45px;
+    margin-bottom: 37px;
+    line-height: 1;
+}
+
+.fc2 {
+    line-height: 1;
+}
+
+.burgertox .line1{
+    transform: rotate(-45deg) translate(-2.5px, 6px);
+}
+
+.burgertox .line2{
+    opacity: 0;
+}
+
+.burgertox .line3{
+    transform: rotate(45deg) translate(-2.5px, -6px);
+}
+
+.elementbuttons a, .sectiontwobutton a, .sectionthreebutton a {
+    text-decoration: none;
+}
+
+.elementbuttons button:hover, .sectiontwobutton button:hover, .sectionthreebutton button:hover {
+    color: black;
+    background-color: white;
+}
+
+.opacitychange {
+    opacity:0;
+    transition:opacity 0.9s ease-in;
+}
+.opacitychange.appear {
+    opacity:1;
+}
+
+.linkedinfooterborder, .linkedinheaderborder {
+    background-color: white;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.linkedinsectionfourborder  {
+    background-color: white;
+    border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.linkedinfooter, .linkedinheader, .linkedinsectionfour {
+    width: 100%;
+    height: 100%;
+    position : relative;
+    left: -8px;
+    top: -8px;
+}
+
+
+
+@media (max-width: 1024px){
+
+    .container, .element {
+        max-height: 800px;
+        top: 0px;
+    }
+
+    .container {
+        background-size: auto 800px;
+    }
+
+    .background-overlay{
+        height: 800px;
+        width: auto;
+    }
+
+    .block{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .burgercontainer{
+        display: flex;
+        justify-content: right;
+        position: relative;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .dropnavbar{
+        margin-top: 10px;
+        display: block;
+        position: absolute;
+        height: auto;
+        top: 33px;
+        right: -34vw;
+        width: 100vw;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.2s ease-in;
+        z-index: 999;
+    }
+
+    .nav-active {
+        transform: scaleY(1);
+        z-index: 999;
+    }
+
+
+    .logo a{
+        justify-content: left;
+    }
+
+    .logo img{
+        width: 61%;
+        max-width: 44%;
+    }
+
+    .logoborder, nav, .socials{
+        width: 33%;
+    }
+
+    .elementtitle, .sectiontwotitle{
+        font-size: 36px;
+    }
+
+    .elementtitle {
+        top: 200px;
+    }
+
+    .elementpar{
+        font-size: 16px;
+        top: 250px;
+    }
+
+    .elementbuttons{
+        font-size: 16px;
+        top: 300px;
+    }
+
+    .sectiontwo{
+        padding: 80px 16px;
+    }
+    
+    .sectiontwocontent{
+        font-size: 22px;
+        padding: 16;
+    }
+
+    .sectiontwotitle{
+        font-size: 36px;
+        padding: 16px;
+    }
+
+    .sectionthreecontainer {
+        min-height: 800px;
+    }
+    
+
+}
+
+
+@media (max-width: 786px){
+    .logoborder, nav {
+        width: 50%;
+    }
+
+    .dropnavbar{
+        right: 0px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .elementtitle{
+        font-size: 28px;
+        top: 10vh;
+    }
+
+    .elementpar{
+        font-size: 14px;
+        top: 15vh;
+    }
+
+    .elementbuttons{
+        display: block;
+        font-size: 12px;
+        top:20vh;
+    }
+
+    .block button{
+        width: 90vw;
+    }
+
+    .logo img{
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .sectiontwotitle{
+        font-size: 28px;
+    }
+
+    .sectiontwocontent{
+        font-size: 22px;
+        display: block;
+        padding: 1em;
+    }
+
+    .stp1, .stp2, .stp3{
+        width: auto;
+        padding: 8% 8% 0% 8%;
+        text-align: center; 
+    }
+
+    .stp3 {
+        padding: 8% 8% 8% 8%;
+    }
+
+    .sectionthreecontainer {
+        min-height: 612px;
+        display: block;
+    }
+
+    .sectionthreeimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sectionthreecontentcontainer {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navandsocialsfootercontainer {
+        display: block;
+    }
+
+    .navfooter {
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .socialsfooter {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
